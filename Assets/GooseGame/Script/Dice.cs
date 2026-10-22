@@ -9,7 +9,8 @@ public class Dice : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            int Result = Random.Range(2, 13); //résultat entre 1 et 12
+            int Result = Random.Range(1, 7); //résultat entre 1 et 6
+            //int Result = 12; test
             Debug.Log(Result);
             LaunchDice.Invoke(Result); //invoke et envoie le résultat au player
         }
